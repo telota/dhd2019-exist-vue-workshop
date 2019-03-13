@@ -32,7 +32,7 @@ Hinweis: Prüfen Sie vorab, ob Java 8 installiert ist und andere/ältere Version
     3. Admin Passwort und Memory Einstellungen:
         * geben Sie hier ein Passwort Ihrer Wahl ein. Dieses wird später bei bestimmten Aktionen in eXist-db benötigt. 
         * Hinweis: das Freilassen stellt ein Sicherheitsrisiko dar und ist deshalb nicht zu empfehlen.
-        ![alt text](https://github.com/telota/dhd2019-exist-vue-workshop/dhd2019-exist-vue-workshop/imgages/4b.jpg "eXist-db admin pw") 
+        ![alt text](imgages/4b.jpg "eXist-db admin pw") 
     4. Package Installation: Klicken Sie "Next"
         ![alt text](images/5.jpg "eXist-db data path") 
     5. Nun erfolgt die package installation. Klicken Sie anschließend auf "Next" ![alt text](images/7.jpg "eXist-db finished") 
