@@ -27,7 +27,7 @@ Hinweis: Prüfen Sie vorab, ob Java 8 installiert ist und andere/ältere Version
     ```java -jar eXist-db-setup-[version].jar```
 4. Nun öffnet sich ein Installationsassitent. Wir empfehlen die Standardeinstellungen beizubehalten. Klicken Sie auf "Next". ![alt text](images/1.jpg "eXist-db Installer")
 5. Sie werden nach folgenden Schritten gefragt:
-    1. Installationsordner: wählen Sie einen Pfad und klicken Sie auf "Next". ![alt text](images/2.jpg "eXist-db installation path") 
+    1. Installationsordner: wählen Sie einen Pfad und klicken Sie auf "Next". ![eXist-db installation path](images/2.jpg) 
     2. Datenordner wählen Sie einen Pfad und klicken Sie auf "Next". ![alt text](images/3.jpg "eXist-db data path") 
     3. Admin Passwort und Memory Einstellungen:
         * geben Sie hier ein Passwort Ihrer Wahl ein. Dieses wird später bei bestimmten Aktionen in eXist-db benötigt. 
