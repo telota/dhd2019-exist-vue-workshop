@@ -49,7 +49,7 @@ Hinweis: Prüfen Sie vorab, ob Java 8 installiert ist und andere/ältere Version
 5. Klicken Sie auf "install as a Service" falls dies nicht bereits erfolgt ist.
 
 ## quoteSalute.DB App installieren
-1. Gehen Sie auf die Webseite https:/github.com/telota/dhd2019-exist-vue-workshop/releases und speichern Sie die Datei quoteSalute.db-〈version〉.xar lokal ab. 
+1. Gehen Sie auf die Webseite https:/github.com/telota/dhd2019-exist-vue-workshop/workshopDHd/quoteSalute/releases und speichern Sie die Datei quoteSalute.db-〈version〉.xar lokal ab. 
 2. Öffnen Sie das eXist-db Menü (klick auf Icon in der Symbolleiste) und klicken Sie auf "Open Dashboard". Ihr Standardbrowser (vorzugsweise Firefox oder Chrome) sollte sich nun öffnen und das eXist-db Dashboard anzeigen ![alt text](https:/github.com/telota/dhd2019-exist-vue-workshop/imgages/15.jpg "eXist-db dashboard").
 3. Geben Sie nun Ihre Admin-Nutzerdaten ein: 
     * User: admin
