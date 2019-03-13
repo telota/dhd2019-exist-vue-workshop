@@ -54,9 +54,9 @@ Hinweis: Prüfen Sie vorab, ob Java 8 installiert ist und andere/ältere Version
 3. Geben Sie nun Ihre Admin-Nutzerdaten ein: 
     * User: admin
     * Password: [Ihr Passwort, das Sie bei der Installation vergeben haben]
-    ![alt text](images/16.JPG "eXist-db dashboard einloggen")
-4. Öffnen Sie die Package Manager App. ![alt text](images/17.JPG "eXist-db package manager")
+4. Öffnen Sie die Package Manager App. ![alt text](images/16.JPG "eXist-db dashboard einloggen")
 5. Klicken Sie auf den Button add a package, ziehen Sie die gespeicherte Datei quoteSalute.db-〈version〉.xar in das Fenster Upload Packages oder klicken Sie auf Upload und wählen die xar-Datei über Ihr Dateiexplorer aus und schließen Sie das Fenster Package Manager.
+![alt text](images/17.JPG "eXist-db package manager")
 6. Im Dashboard sehen Sie nun die quoteSalute.DB App.
 
 
