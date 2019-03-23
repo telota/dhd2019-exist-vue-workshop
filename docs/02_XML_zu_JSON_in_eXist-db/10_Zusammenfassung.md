@@ -12,3 +12,7 @@ Sie haben Ihr Wissen getestet und folgende Challenges absolviert:
 
 1. [Challenge 1: Eine Grußformel abrufen](03_Challenge_1_-_Eine_Grußformel_abrufen.md)
 2. [Challenge 2: Ein neuer Filter](08_Challenge_2_-_Ein_neuer_Filter.md)
+
+Im [folgenden Kapitel](../03_Erste_Schritte_mit_VueJS/00_Übersicht.md) werden die ersten Schritte mit VueJS erklärt, sodass im [finalen Kapitel](../04_eXist-db_und_VueJS/00_Übersicht.md) die Verbindung von VueJS und eXist-db vollzogen werden kann.
+
+Vorerst müssen Sie keine weiteren Änderungen mit eXide vornehmen.
