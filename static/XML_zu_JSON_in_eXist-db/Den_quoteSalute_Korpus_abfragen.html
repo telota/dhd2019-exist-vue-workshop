@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="de">
 <head>
     <title>Den quoteSalute Korpus abfragen - eXist-db und VueJS für dynamische UI-Komponenten</title>
-    <meta name="description" content="My Stylish Documentation">
+    <meta name="description" content="Tutorial: eXist-db und VueJS für dynamische UI-Komponenten">
     <meta name="author" content="Oliver Pohl, Jonas Müller-Laackmann, Teodora Dogaru, Lou Klappenbach">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="icon" href="../themes/daux/img/favicon-blue.png" type="image/x-icon">
+    <link rel="icon" href="../themes/daux/img/favicon-red.png" type="image/x-icon">
 
     <!-- Mobile -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -16,7 +16,7 @@
     <!-- Font -->
     
     <!-- CSS -->
-    <link href='../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+    <link href='../themes/daux/css/theme-red.min.css' rel='stylesheet' type='text/css'>
             <!-- Tipue Search -->
         <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
     
@@ -39,20 +39,20 @@
         <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
             <path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/>
         </svg>
-        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on"
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Suchen..." autocomplete="on"
                results=25 autosave=text_search>
     </div>
 
         <div class="Collapsible__content">
             <!-- Navigation -->
-            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Vorab</a><ul class='Nav'><li class='Nav__item '><a href="../Vorab/Bevor_es_losgeht.html">Bevor es losgeht</a></li><li class='Nav__item '><a href="../Vorab/quoteSalute.html">quoteSalute</a></li><li class='Nav__item '><a href="../Vorab/Der_quoteSalute_XML_Korpus.html">Der quoteSalute XML Korpus</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>eXist-db Setup</a><ul class='Nav'><li class='Nav__item '><a href="../eXist-db_Setup/eXist-db_Installation.html">eXist-db Installation</a></li><li class='Nav__item '><a href="../eXist-db_Setup/quoteSalute_Installation.html">quoteSalute Installation</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>XML zu JSON in eXist-db</a><ul class='Nav'><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Erste_Schritte_mit_eXide.html">Erste Schritte mit eXide</a></li><li class='Nav__item Nav__item--active'><a href="../XML_zu_JSON_in_eXist-db/Den_quoteSalute_Korpus_abfragen.html">Den quoteSalute Korpus abfragen</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Challenge_1_-_Ein_Zitat_holen.html">Challenge 1 - Ein Zitat holen</a></li></ul></li></ul>
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Vorab</a><ul class='Nav'><li class='Nav__item '><a href="../Vorab/Bevor_es_losgeht.html">Bevor es losgeht</a></li><li class='Nav__item '><a href="../Vorab/quoteSalute.html">quoteSalute</a></li><li class='Nav__item '><a href="../Vorab/Der_quoteSalute_XML_Korpus.html">Der quoteSalute XML Korpus</a></li><li class='Nav__item '><a href="../Vorab/Softwarearchitektur.html">Softwarearchitektur</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>eXist-db Setup</a><ul class='Nav'><li class='Nav__item '><a href="../eXist-db_Setup/eXist-db_Installation.html">eXist-db Installation</a></li><li class='Nav__item '><a href="../eXist-db_Setup/quoteSalute_Installation.html">quoteSalute Installation</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>XML zu JSON in eXist-db</a><ul class='Nav'><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Übersicht.html">Übersicht</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Erste_Schritte_mit_eXide.html">Erste Schritte mit eXide</a></li><li class='Nav__item Nav__item--active'><a href="../XML_zu_JSON_in_eXist-db/Den_quoteSalute_Korpus_abfragen.html">Den quoteSalute Korpus abfragen</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Challenge_1_-_Eine_Grußformel_abrufen.html">Challenge 1 - Eine Grußformel abrufen</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Challenge_1_-_Lösung.html">Challenge 1 - Lösung</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Eine_zufällige_Grußformel_generieren.html">Eine zufällige Grußformel generieren</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/XML_zu_JSON.html">XML zu JSON</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Abfragen_mit_Filtern.html">Abfragen mit Filtern</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Challenge_2_-_Ein_neuer_Filter.html">Challenge 2 - Ein neuer Filter</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Challenge_2_-_Lösung.html">Challenge 2 - Lösung</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Zusammenfassung.html">Zusammenfassung</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Erste Schritte mit VueJS</a><ul class='Nav'><li class='Nav__item '><a href="../Erste_Schritte_mit_VueJS/Übersicht.html">Übersicht</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>eXist-db und VueJS</a><ul class='Nav'><li class='Nav__item '><a href="../eXist-db_und_VueJS/Übersicht.html">Übersicht</a></li></ul></li></ul>
 
             <div class="Links">
                             </div>
 
                                 <div class="CodeToggler">
                         <hr/>
-                                                    <label class="Checkbox">Show Code Blocks                                <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
+                                                    <label class="Checkbox">Code-Blöcke anzeigen                                <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
                                 <div class="Checkbox__indicator"></div>
                             </label>
                                             </div>
@@ -66,22 +66,84 @@
                 <article class="Page">
 
     <div class="Page__header">
-        <h1><a href="../XML_zu_JSON_in_eXist-db/Erste_Schritte_mit_eXide.html">XML zu JSON in eXist-db</a> <svg class="Page__header--separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M360.73 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"/></svg> <a href="../XML_zu_JSON_in_eXist-db/Den_quoteSalute_Korpus_abfragen.html">Den quoteSalute Korpus abfragen</a></h1>
+        <h1><a href="../XML_zu_JSON_in_eXist-db/Übersicht.html">XML zu JSON in eXist-db</a> <svg class="Page__header--separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M360.73 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"/></svg> <a href="../XML_zu_JSON_in_eXist-db/Den_quoteSalute_Korpus_abfragen.html">Den quoteSalute Korpus abfragen</a></h1>
                     </div>
 
     <div class="s-content">
         <ul class="TableOfContents">
 <li>
 <p><a href="#page_Den-quoteSalute-Korpus-abfragen">Den quoteSalute Korpus abfragen</a></p>
+<ul class="TableOfContents">
+<li>
+<p><a href="#page_abfrage-xql-Das-quoteSalute-Back-End">abfrage.xql - Das quoteSalute-Back-End</a></p>
+<ul class="TableOfContents">
+<li>
+<p><a href="#page_Einfache-Datenbankabfrage">Einfache Datenbankabfrage</a></p>
+</li>
+<li>
+<p><a href="#page_Ergebnisse-in-eXide">Ergebnisse in eXide</a></p>
+</li>
+<li>
+<p><a href="#page_Ergebnisse-im-Browser">Ergebnisse im Browser</a></p>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 <h1 id="page_Den-quoteSalute-Korpus-abfragen">Den quoteSalute Korpus abfragen</h1>
-<p>TODO</p>
+<p>Die Datenbankabfragen bei quoteSalute werden über die Datei <code>abfrage.xql</code> abgewickelt. In diesem Abschnitt wird eine sehr vereinfachte Version dieser Datei erklärt, um die Funktionsweise Schritt für Schritt zu erläutern.</p>
+<h2 id="page_abfrage-xql-Das-quoteSalute-Back-End">abfrage.xql - Das quoteSalute-Back-End</h2>
+<ol>
+<li>Öffnen Sie eXide über Ihr eXist-Dashboard. Siehe dazu auch: <a href="Erste_Schritte_mit_eXide.html#Wichtige-URLs">Wichtige URLS</a>
+</li>
+<li>Öffnen Sie im <a href="Erste_Schritte_mit_eXide.html#Aufbau-von-eXide">Dateibrowser</a> die Datei <code>/db/apps/quotesalute/abfrage-tutorial-01.xql</code>
+</li>
+</ol>
+<h3 id="page_Einfache-Datenbankabfrage">Einfache Datenbankabfrage</h3>
+<p>Der folgende Code-Schnipsel bezieht sich auf die Datei <code>abfrage-tutorial-01.xql</code>. Innerhalb von eXist-db wird mit der funktionalen Programmiersprache <a href="https://www.w3.org/TR/xquery-31/" class="Link--external">XQuery</a> gearbeitet. Die dazugehörige Dateiendung ist <code>.xql</code>.</p>
+<p>Im folgenden Code-Beispiel passiert folgendes:</p>
+<pre><code class="language-xquery">xquery version &quot;3.0&quot;;
+
+(: Deklaration von Namensräumen. Wichtig für die Arbeit mit TEI-XML-Daten :)
+declare namespace tei=&quot;http://www.tei-c.org/ns/1.0&quot;;
+
+(: Variable zum Speichern des Daten-Verzeichnispfads :)
+let $data := &quot;/db/apps/quotesalute/data&quot;
+
+(: Hole alle TEI-Daten aus dem Korpus :)
+return collection($data)//tei:TEI
+</code></pre>
+<ul>
+<li>
+<code>(: Kommentar :)</code> - Angaben die mit <code>(:</code> beginnen und <code>:)</code> aufhören sind sog. Kommentare. Diese helfen den Code besser zu lesen. Sie haben keinen Einfluss auf den auszuführenden Code.</li>
+<li>Z. 1: Deklaration der XQuery-Version. Dies hilft der eXist-db den Code zu durchleuchten und den möglichen Funktionsumfang des Codes richtig einzuschätzen.</li>
+<li>Z. 3: Es wird der <a href="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-namespace.html" class="Link--external">TEI-Namensraum</a> deklariert. Namensräume in XML-Daten helfen, den XML-Elementen eine bereits vordefinierte Bedeutung zu verleihen. So wird z.B. mit dem Namensraum-Tag (Element) <code>&lt;tei:lb/&gt;</code> sichergestellt, dass es sich um einen Zeilenumbruch (Line Break) handelt, und nicht um eine etwaige Nutzung von <code>lb</code> als Gewichtheinheit Pfund.</li>
+<li>Z. 5: Der Pfad zu der Arbeitskollektion von quoteSalute wird in der Variable <code>$data</code> hinterlegt.</li>
+<li>Z. 7: Das Ergebnis der gesamten Operation. Hier wird der gesamte quoteSalute-Korpus durchsucht. Dabei sollen alle Elemente aus allen Dateien ausgeliefert werden <code>//</code>, die den Tag-Namen <code>tei:TEI</code> haben.</li>
+</ul>
+<h3 id="page_Ergebnisse-in-eXide">Ergebnisse in eXide</h3>
+<p>Sie können sich die XML-Ergebnisse direkt in eXide anzeigen lassen.</p>
+<ol>
+<li>Lesen Sie sich den Code durch</li>
+<li>Drücken Sie auf den <code>Eval</code>-Button in der Toolbar.</li>
+<li>Es erscheint unter dem Editor-Bereich ein Ergebnisbereich. Dort werden Ihnen die abfragten Daten angezeigt.</li>
+</ol>
+<p>Siehe auch <a href="Erste_Schritte_mit_eXide.html#Aufbau-von-eXide">Aufbau von eXide</a>.</p>
+<h3 id="page_Ergebnisse-im-Browser">Ergebnisse im Browser</h3>
+<p>Sie können sich die XML-Ergebnisse auch anders über Ihren Browser anzeigen lassen.</p>
+<ol>
+<li>Öffnen Sie einen neuen Browsertab.</li>
+<li>Geben Sie folgende URL ein: <a href="http://localhost:8080/exist/apps/quotesalute/abfrage-tutorial-01.xql" class="Link--external">http://localhost:8080/exist/apps/quotesalute/abfrage-tutorial-01.xql</a>.</li>
+<li>In diesem Fall erhalten Sie noch kein wohlgeformtes XML zurück. Weiter mit Schritt 4.</li>
+<li>Lassen Sie sich den Seitenquelltext anzeigen um ans rohe XML zu gelangen.
+a. Firefox und Chrome - <code>Strg + U</code> oder Rechtsklick -&gt; Seitenquelltext anzeigen.</li>
+</ol>
     </div>
 
         <nav>
         <ul class="Pager">
-            <li class=Pager--prev><a href="../XML_zu_JSON_in_eXist-db/Erste_Schritte_mit_eXide.html">Previous</a></li>            <li class=Pager--next><a href="../XML_zu_JSON_in_eXist-db/Challenge_1_-_Ein_Zitat_holen.html">Next</a></li>        </ul>
+            <li class=Pager--prev><a href="../XML_zu_JSON_in_eXist-db/Erste_Schritte_mit_eXide.html">Zurück</a></li>            <li class=Pager--next><a href="../XML_zu_JSON_in_eXist-db/Challenge_1_-_Eine_Grußformel_abrufen.html">Weiter</a></li>        </ul>
     </nav>
     </article>
 
@@ -96,7 +158,7 @@
             <script>
             
             window.searchLanguage = "";
-            window.searchTranslation = {"Search_one_result":"1 result","Search_results":"!count results","Search_no_results":"Nothing found","Search_common_words_ignored":"Common words are largely ignored","Search_too_short":"Search too short","Search_one_character_or_more":"Should be one character or more","Search_should_be_x_or_more":"Should be !min characters or more","Link_previous":"Previous","Link_next":"Next"};
+            window.searchTranslation = {"Search_one_result":"1 Ergebnis","Search_results":"!count Ergebnisse","Search_no_results":"Nichts gefunden","Search_common_words_ignored":"Allgemeine W\u00f6rter werden weitgehend ignoriert","Search_too_short":"Suche zu kurz","Search_one_character_or_more":"Sollte ein Zeichen oder mehr sein","Search_should_be_x_or_more":"Sollte !min Zeichen oder mehr sein","Link_previous":"Zur\u00fcck","Link_next":"Weiter"};
         </script>
 
         <!-- Tipue Search -->

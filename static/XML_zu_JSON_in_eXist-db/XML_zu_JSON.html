@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de">
+<head>
+    <title>XML zu JSON - eXist-db und VueJS für dynamische UI-Komponenten</title>
+    <meta name="description" content="Tutorial: eXist-db und VueJS für dynamische UI-Komponenten">
+    <meta name="author" content="Oliver Pohl, Jonas Müller-Laackmann, Teodora Dogaru, Lou Klappenbach">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="../themes/daux/img/favicon-red.png" type="image/x-icon">
+
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-red.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="../themes/daux/js/html5shiv-3.7.3.min.js"></script>
+    <![endif]-->
+</head>
+<body class=" ">
+    <div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <button type="button" class="Button Collapsible__trigger">
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+        </button>
+
+        <a class="Brand" href="../index.html">eXist-db und VueJS für dynamische UI-Komponenten</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
+            <path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/>
+        </svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Suchen..." autocomplete="on"
+               results=25 autosave=text_search>
+    </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Vorab</a><ul class='Nav'><li class='Nav__item '><a href="../Vorab/Bevor_es_losgeht.html">Bevor es losgeht</a></li><li class='Nav__item '><a href="../Vorab/quoteSalute.html">quoteSalute</a></li><li class='Nav__item '><a href="../Vorab/Der_quoteSalute_XML_Korpus.html">Der quoteSalute XML Korpus</a></li><li class='Nav__item '><a href="../Vorab/Softwarearchitektur.html">Softwarearchitektur</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>eXist-db Setup</a><ul class='Nav'><li class='Nav__item '><a href="../eXist-db_Setup/eXist-db_Installation.html">eXist-db Installation</a></li><li class='Nav__item '><a href="../eXist-db_Setup/quoteSalute_Installation.html">quoteSalute Installation</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>XML zu JSON in eXist-db</a><ul class='Nav'><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Übersicht.html">Übersicht</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Erste_Schritte_mit_eXide.html">Erste Schritte mit eXide</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Den_quoteSalute_Korpus_abfragen.html">Den quoteSalute Korpus abfragen</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Challenge_1_-_Eine_Grußformel_abrufen.html">Challenge 1 - Eine Grußformel abrufen</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Challenge_1_-_Lösung.html">Challenge 1 - Lösung</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Eine_zufällige_Grußformel_generieren.html">Eine zufällige Grußformel generieren</a></li><li class='Nav__item Nav__item--active'><a href="../XML_zu_JSON_in_eXist-db/XML_zu_JSON.html">XML zu JSON</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Abfragen_mit_Filtern.html">Abfragen mit Filtern</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Challenge_2_-_Ein_neuer_Filter.html">Challenge 2 - Ein neuer Filter</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Challenge_2_-_Lösung.html">Challenge 2 - Lösung</a></li><li class='Nav__item '><a href="../XML_zu_JSON_in_eXist-db/Zusammenfassung.html">Zusammenfassung</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Erste Schritte mit VueJS</a><ul class='Nav'><li class='Nav__item '><a href="../Erste_Schritte_mit_VueJS/Übersicht.html">Übersicht</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>eXist-db und VueJS</a><ul class='Nav'><li class='Nav__item '><a href="../eXist-db_und_VueJS/Übersicht.html">Übersicht</a></li></ul></li></ul>
+
+            <div class="Links">
+                            </div>
+
+                                <div class="CodeToggler">
+                        <hr/>
+                                                    <label class="Checkbox">Code-Blöcke anzeigen                                <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
+                                <div class="Checkbox__indicator"></div>
+                            </label>
+                                            </div>
+                
+                
+                        </div>
+    </aside>
+    <div class="Columns__right Columns__right--full">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1><a href="../XML_zu_JSON_in_eXist-db/Übersicht.html">XML zu JSON in eXist-db</a> <svg class="Page__header--separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M360.73 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"/></svg> <a href="../XML_zu_JSON_in_eXist-db/XML_zu_JSON.html">XML zu JSON</a></h1>
+                    </div>
+
+    <div class="s-content">
+        <ul class="TableOfContents">
+<li>
+<p><a href="#page_XML-zu-JSON">XML zu JSON</a></p>
+<ul class="TableOfContents">
+<li>
+<p><a href="#page_Neuerungen-im-Code">Neuerungen im Code</a></p>
+</li>
+<li>
+<p><a href="#page_Erlaeuterungen">Erläuterungen</a></p>
+</li>
+<li>
+<p><a href="#page_Code">Code</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="page_XML-zu-JSON">XML zu JSON</h1>
+<p>In diesem Abschnitt wird die Erklärung zur Datei <code>abfrage.xql</code> erweitert. Es wird gezeigt, wie XML-Daten zu <a href="https://www.json.org/json-de.html" class="Link--external">JSON</a> serialisiert werden können.</p>
+<h2 id="page_Neuerungen-im-Code">Neuerungen im Code</h2>
+<ol>
+<li>Öffnen Sie die Datei <code>abfrage-tutorial-03.xql</code> in eXide.</li>
+<li>Schauen Sie sich Code und Kommentare an.</li>
+<li>Führen Sie den Code aus. Lassen Sie sich das Ergebnis in eXide oder im Browser anzeigen. Was hat sich im Vergleich zu <code>abfrage-tutorial-02.xql</code> geändert?</li>
+</ol>
+<h2 id="page_Erlaeuterungen">Erläuterungen</h2>
+<p>Z. 5-8: Wir wollen das XML-Ergebnis am Ende nach JSON serialisieren. Der <code>output</code>-Namensraum wird benötigt, um Daten in ein anderes Format zu serialisieren. Mit der Option <code>exist:serialize</code> zeigen wir der eXist-db an, dass später im Code eine Datenserialisierung erfolgen soll und die dementsprechenden Funktionen bereitgehalten werden sollen.</p>
+<pre><code class="language-xquery">declare namespace output=&quot;http://www.w3.org/2010/xslt-xquery-serialization&quot;;
+
+(: Serialisierung nach JSON als Ergebnisziel angeben :)
+declare option exist:serialize &quot;media-type=application/json&quot;;
+</code></pre>
+<p>Z. 10-27: Dies ist eine interne Helferfunktion, welche XML-Daten bereinigt. Dabei wird sämtlicher Textinhalt aus einem Element und seinen Kinderelementen zu einem Text zusammengefügt.</p>
+<table>
+<thead>
+<tr>
+<th>Vorher</th>
+<th>Nachher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;div&gt;Das ist &lt;a href=&quot;#&quot;&gt;das Haus&lt;/a&gt; vom Nikolaus.&lt;/div&gt;</code></td>
+<td><code>&lt;div&gt;Das ist das Haus vom Nikolaus.&lt;/div&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Schauen wir uns ein Beispielzitat aus dem Korpus an:</p>
+<pre><code class="language-xml">&lt;cit&gt;
+    &lt;quote ana=&quot;#formal #s-m #r-n&quot; xml:lang=&quot;deu&quot;&gt;Mit Verehrung Ihr ergebenster
+      etc.&lt;/quote&gt;
+    &lt;bibl&gt;
+      &lt;title type=&quot;edition&quot;&gt;Jean Paul – Sämtliche Briefe digital&lt;/title&gt;
+      &lt;title type=&quot;letter&quot;&gt;An Friederike Christiane Elisabeth von Ompteda. Bayreuth, 24. Dezember 1819.&lt;/title&gt;
+      &lt;ref target=&quot;https://jeanpaul-edition.de/brief.html?num=VII_612&quot;/&gt;
+    &lt;/bibl&gt;
+&lt;/cit&gt;
+</code></pre>
+<p>Z. 46-52: Die Inhalte und Metadaten zur zufällig ausgewählten Grußformel werden in separaten Variablen gespeichert. Dabei werden die Inhalte mit <code>normalize-space()</code> und <code>local:clean-up()</code> bereinigt, um z.B. Zeilenumbrüche und ggf. doppelt vorkommende Leerstellen zu entfernen. Der Inhalt der Variable <code>$quote</code> wird in diesem Fall dann <code>&lt;quote&gt;Mit Verehrung Ihr ergebenster etc.&lt;/quote&gt;</code> sein. Das gilt analog für die anderen Variablen.</p>
+<pre><code class="language-xquery">let $quote := element quote { normalize-space(string-join(local:clean-up($randomcit/tei:quote))) }
+let $edition := element edition { normalize-space($randomcit//tei:title[@type='edition']) }
+let $title := element title { normalize-space($randomcit//tei:title[@type='letter']) }
+let $language := element language { normalize-space($randomcit//tei:quote/@xml:lang) }
+let $url := element url { $randomcit//tei:bibl/tei:ref/@target/data(.) }
+let $licence := element licence { $randomcit//tei:licence/@target/data(.) }
+</code></pre>
+<p>Z. 54: Wir erstellen ein neues Element <code>&lt;cit&gt;</code> mit den bereinigten Inhalten aus den Statements zuvor.</p>
+<pre><code class="language-xquery">let $preparedGreeting := element cit {$quote,$edition,$title,$url,$language,$licence}
+</code></pre>
+<p>Der Inhalt von <code>$preparedGreeting</code> sollte dann mit dem Beispiel oben wie folgt aussehen:</p>
+<pre><code class="language-xml">&lt;cit&gt;
+  &lt;quote&gt;Mit Verehrung Ihr ergebenster etc.&lt;/quote&gt;
+  &lt;edition&gt;Jean Paul – Sämtliche Briefe digital&lt;/edition&gt;
+  &lt;title&gt;An Friederike Christiane Elisabeth von Ompteda. Bayreuth, 24. Dezember 1819.&lt;/title&gt;
+  &lt;url&gt;https://jeanpaul-edition.de/brief.html?num=VII_612&lt;/url&gt;
+  &lt;language&gt;deu&lt;/language&gt;
+  &lt;licence&gt;&lt;/licence&gt;
+&lt;/cit&gt;
+</code></pre>
+<p>Z. 57-63: Hier werden die JSON-Serialisierungsparameter angegeben. D.h., hier wird bestimmt, wie der JSON-Output am Ende aussehen soll.</p>
+<pre><code class="language-xquery">let $jsonSerializationParams :=
+&lt;output:serialization-parameters
+        xmlns:output=&quot;http://www.w3.org/2010/xslt-xquery-serialization&quot;&gt;
+    &lt;output:method value=&quot;json&quot;/&gt;
+    &lt;output:media-type value=&quot;application/json&quot;/&gt;
+   &lt;output:json-ignore-whitespace-text-nodes value=&quot;yes&quot;/&gt;
+&lt;/output:serialization-parameters&gt;
+</code></pre>
+<p>Z. 66-67: Die berenigten XML-Daten in <code>$preparedGreeting</code> werden mit den von uns vorgegebenen JSON-Serialisierungsparametern <code>$jsonSerializationParams</code> nach JSON umgeformt.</p>
+<pre><code class="language-xquery">return 
+serialize($preparedGreeting, $jsonSerializationParams)
+</code></pre>
+<p>Das JSON-Ergebnis sieht wie folgt aus:</p>
+<pre><code class="language-json">{
+  &quot;quote&quot;:&quot;Mit Achtung der Ihrige&quot;,
+  &quot;edition&quot;:&quot;August Wilhelm Ifflands dramaturgisches und administratives Archiv&quot;,
+  &quot;title&quot;:&quot;Von Johann Gottfried Schadow. Berlin, 12. März 1805. Dienstag&quot;,
+  &quot;url&quot;:&quot;http://iffland.bbaw.de/briefe/detail.xql?id=A0000306&quot;,
+  &quot;language&quot;:&quot;deu&quot;,
+  &quot;licence&quot;:null
+}
+</code></pre>
+<h2 id="page_Code">Code</h2>
+<pre><code class="language-xquery">xquery version &quot;3.0&quot;;
+
+(: Deklaration von Namensräumen. Wichtig für die Arbeit mit TEI-XML-Daten :)
+declare namespace tei=&quot;http://www.tei-c.org/ns/1.0&quot;;
+declare namespace output=&quot;http://www.w3.org/2010/xslt-xquery-serialization&quot;;
+
+(: Serialisierung nach JSON als Ergebnisziel angeben :)
+declare option exist:serialize &quot;media-type=application/json&quot;;
+
+(: Helferfunktion um Datenstrukturen zu bereinigen :)
+declare function local:clean-up($nodes as node()*) as xs:string* {
+    for $node in $nodes
+    return
+        typeswitch($node)
+            case element(tei:lb)|element(tei:abbr)|element(tei:reg)|element(tei:note)
+                return
+                ()
+            case element()
+                return
+                local:clean-up($node/node())
+            case text()
+                return
+                $node
+            default
+                return
+                local:clean-up($node/node())
+    };
+
+(: Variable zum Speichern des Daten-Verzeichnispfads :)
+let $data := &quot;/db/apps/quotesalute/data&quot;
+
+let $greetings := collection($data)//tei:cit
+
+(: Wähle eine zufällige Position aus der Ergebnisliste :)
+let $random := util:random(count($greetings))
+
+(: Stelle sicher, dass auch wirklich nur ein Ergebnis ausgewählt wurde :)
+let $cleanRandom :=
+    if ($random &gt;= 1)
+    then $random
+    else 1
+
+(: Hole die Grußformel an der Stelle :)
+let $randomcit := $greetings[position()=$cleanRandom]
+
+(: Erstelle Variablen für die Inhalte und Metdaten zu einer Grußformel :)
+let $quote := element quote { normalize-space(string-join(local:clean-up($randomcit/tei:quote))) }
+let $edition := element edition { normalize-space($randomcit//tei:title[@type='edition']) }
+let $title := element title { normalize-space($randomcit//tei:title[@type='letter']) }
+let $language := element language { normalize-space($randomcit//tei:quote/@xml:lang) }
+let $url := element url { $randomcit//tei:bibl/tei:ref/@target/data(.) }
+let $licence := element licence { $randomcit//tei:licence/@target/data(.) }
+
+let $preparedGreeting := element cit {$quote,$edition,$title,$url,$language,$licence}
+
+(: Bestimmte wie die JSON-Serializierung aussehen soll :)
+let $jsonSerializationParams :=
+&lt;output:serialization-parameters
+        xmlns:output=&quot;http://www.w3.org/2010/xslt-xquery-serialization&quot;&gt;
+    &lt;output:method value=&quot;json&quot;/&gt;
+    &lt;output:media-type value=&quot;application/json&quot;/&gt;
+   &lt;output:json-ignore-whitespace-text-nodes value=&quot;yes&quot;/&gt;
+&lt;/output:serialization-parameters&gt;
+
+(: Serialisiere das zufällige XML-cit-Element nach JSON :)
+return 
+serialize($preparedGreeting, $jsonSerializationParams)
+
+</code></pre>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../XML_zu_JSON_in_eXist-db/Eine_zufällige_Grußformel_generieren.html">Zurück</a></li>            <li class=Pager--next><a href="../XML_zu_JSON_in_eXist-db/Abfragen_mit_Filtern.html">Weiter</a></li>        </ul>
+    </nav>
+    </article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- JS -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script><script src="../themes/daux/js/highlight.pack.js"></script><script src="../themes/daux/js/daux.js"></script>
+            <script>
+            
+            window.searchLanguage = "";
+            window.searchTranslation = {"Search_one_result":"1 Ergebnis","Search_results":"!count Ergebnisse","Search_no_results":"Nichts gefunden","Search_common_words_ignored":"Allgemeine W\u00f6rter werden weitgehend ignoriert","Search_too_short":"Suche zu kurz","Search_one_character_or_more":"Sollte ein Zeichen oder mehr sein","Search_should_be_x_or_more":"Sollte !min Zeichen oder mehr sein","Link_previous":"Zur\u00fcck","Link_next":"Weiter"};
+        </script>
+
+        <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

@@ -1,3 +1,0 @@
-# Abfragen mit Filtern
-
-TODO

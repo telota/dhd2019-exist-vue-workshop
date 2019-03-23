@@ -1,3 +1,0 @@
-# Challenge 1: Ein Zitat holen
-
-TODO
