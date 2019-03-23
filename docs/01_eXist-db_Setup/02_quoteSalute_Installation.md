@@ -1,7 +1,7 @@
 # quoteSalute Installation
 
 1. Gehen Sie auf das [Github-Repository von quoteSalute](https://github.com/telota/dhd2019-exist-vue-workshop/workshopDHd/quoteSalute/releases) und speichern Sie die Datei `quoteSalute.db-[version].xar` lokal ab.
-2. Öffnen Sie das eXist-db Menü (klick auf das Icon in der Symbolleiste) und klicken Sie auf "Open Dashboard". Ihr Standardbrowser (vorzugsweise Firefox oder Chrome) sollte sich nun öffnen und das eXist-db Dashboard anzeigen ![alt text](img/15.JPG "eXist-db dashboard").
+2. Öffnen Sie das eXist-db Menü (klick auf das Icon in der Symbolleiste) und klicken Sie auf "Open Dashboard". Ihr Standardbrowser (vorzugsweise Firefox oder Chrome) sollte sich nun öffnen und das eXist-db Dashboard anzeigen ![alt text](img/15.JPG "eXist-db dashboard"). Standardmäßig ist die lokal installierte eXist-db-Instanz unter der folgenden URL: [http://localhost:8080](http://localhost:8080) zu erreichen.
 3. Geben Sie nun Ihre Admin-Nutzerdaten ein:
     * User: admin
     * Password: [Ihr Passwort, das Sie bei der Installation vergeben haben]

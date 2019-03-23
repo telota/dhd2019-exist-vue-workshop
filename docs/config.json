@@ -1,8 +1,12 @@
 {
   "title": "eXist-db und VueJS für dynamische UI-Komponenten",
+  "tagline": "Tutorial: eXist-db und VueJS für dynamische UI-Komponenten",
   "author": "Oliver Pohl, Jonas Müller-Laackmann, Teodora Dogaru, Lou Klappenbach",
+  "language": "de",
   "html": {
     "auto_toc": true,
-    "search": true
+    "repo": "telota/dhd2019-exist-vue-workshop",
+    "search": true,
+    "theme": "daux-red"
   }
 }

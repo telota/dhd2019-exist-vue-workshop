@@ -25,14 +25,14 @@ Hinweis: Prüfen Sie vorab, ob Java 8 installiert ist und andere/ältere Version
     ```java -jar eXist-db-setup-[version].jar```
 4. Nun öffnet sich ein Installationsassitent. Wir empfehlen die Standardeinstellungen beizubehalten. Klicken Sie auf "Next". ![alt text](img/1.JPG "eXist-db Installer")
 5. Sie werden nach folgenden Schritten gefragt:
-    1. Installationsordner: wählen Sie einen Pfad und klicken Sie auf "Next". ![alt text](img/2.JPG "eXist-db installation path") 
+    1. Installationsordner: wählen Sie einen Pfad und klicken Sie auf "Next". ![alt text](img/2.JPG "eXist-db installation path")
     2. Datenordner wählen Sie einen Pfad und klicken Sie auf "Next". ![alt text](img/3.JPG "eXist-db data path")
     3. Admin Passwort und Memory Einstellungen:
         * geben Sie hier ein Passwort Ihrer Wahl ein. Dieses wird später bei bestimmten Aktionen in eXist-db benötigt.
         * Hinweis: das Freilassen stellt ein Sicherheitsrisiko dar und ist deshalb nicht zu empfehlen.
-        ![alt text](https://github.com/telota/dhd2019-exist-vue-workshop/dhd2019-exist-vue-workshop/imgages/4b.JPG "eXist-db admin pw")
+        ![alt text](img/4b.JPG "eXist-db admin pw")
     4. Package Installation: Klicken Sie "Next"
-        ![alt text](img/5.JPG "eXist-db data path") 
+        ![alt text](img/5.JPG "eXist-db data path")
     5. Nun erfolgt die package installation. Klicken Sie anschließend auf "Next" ![alt text](img/7.JPG "eXist-db finished")
     6. Nun erfolgen weitere Installationen. Klicken Sie anschließend auf "Next". ![alt text](img/9.JPG "eXist-db ...")
     7. Wählen Sie Ihre präferierten Shortcuts und klicken Sie anschließend auf "Next" ![alt text](img/10.JPG "eXist-db data shortcuts")

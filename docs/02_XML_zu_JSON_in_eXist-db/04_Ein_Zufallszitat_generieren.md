@@ -1,0 +1,3 @@
+# Ein Zufallszitat generieren
+
+TODO
