@@ -14,4 +14,4 @@ Sie werden lernen, wie man
 * VueJS-Instanz-interne Funktionen und mit On-Click-Events interaktiv gestaltet, sowie
 * sog. Computed Properties, d.h. sich stetig aktualisierende Variablen, anwendet.
 
-Die Code-Beispiele in diesem Kapitel sind etwas vom quoteSalute-Inhalt losgelöst. Im [folgenden und finalen Kapitel](../04_eXist-db_und_VueJS) werden dann eXist-db und VueJS miteinander verbunden, um das quoteSalute-Front-End zu realisieren.
+Die Code-Beispiele in diesem Kapitel sind etwas vom quoteSalute-Inhalt losgelöst. Im [folgenden und finalen Kapitel](../04_eXist-db_und_VueJS/Übersicht.md) werden dann eXist-db und VueJS miteinander verbunden, um das quoteSalute-Front-End zu realisieren.
