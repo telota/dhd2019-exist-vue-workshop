@@ -2,7 +2,7 @@
 
 Hier ist unsere Musterlösung zur [Challenge 2: Liste erweitern](08_Challenge_2_-_Liste_erweitern.md).
 
-## JS
+## JavaScript
 
 * Im `data`-Bereich wurde eine neue Variable `newItem` vergeben.
 * Im `methods`-Bereich wurde eine neue Funktion `addItem()` angelegt. Diese wird näher erläutert.

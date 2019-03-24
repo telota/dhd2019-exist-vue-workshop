@@ -10,6 +10,7 @@
     <header class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:20px">quoteSalute</header>
     <div class="container">
         <div id="quoteSalute">
+          
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">{{ edition }}</h5>
@@ -18,6 +19,7 @@
               <a :href="url" class="card-link" target="_blank">Zum Originalbrief</a>
             </div>
           </div>
+
         </div>
     </div>
     <script src="js/vue.js"></script>
@@ -31,6 +33,9 @@
           url: 'https://jeanpaul-edition.de/brief.html?num=VII_612',
           language: 'deu',
           license: null
+        },
+        created() {
+          this.quote = 'Eine neue Grußformel';
         }
       });
     </script>
