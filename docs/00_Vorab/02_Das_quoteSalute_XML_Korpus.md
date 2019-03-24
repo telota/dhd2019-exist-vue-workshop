@@ -7,23 +7,23 @@ Für jede Breifedition, die in das Korpus integriert werden soll, wird eine XML-
 Hier ein Beispiel einer Grußformle im Korpus:
 
     <cit>
-            <quote xml:lang="deu" ana="#formal #s-m #r-m">Leb wohl.</quote>
-            <bibl>
-                <title type="edition">Briefe und Texte aus dem intellektuellen Berlin um 1800</title>
-                <title type="letter">Brief von Adelbert von Chamisso an Louis de La Foye (ohne Ort, Ende Oktober 1804)</title>
-                <ref
-                    target="http://www.berliner-intellektuelle.eu/manuscript?Brief008ChamissoandeLaFoye.xml"
-                />
-            </bibl>
-        </cit>
+        <quote xml:lang="deu" ana="#formal #s-m #r-m">Leb wohl.</quote>
+        <bibl>
+            <title type="edition">Briefe und Texte aus dem intellektuellen Berlin um 1800</title>
+            <title type="letter">Brief von Adelbert von Chamisso an Louis de La Foye (ohne Ort, Ende Oktober 1804)</title>
+            <ref
+                target="http://www.berliner-intellektuelle.eu/manuscript?Brief008ChamissoandeLaFoye.xml"
+            />
+        </bibl>
+    </cit>
 
-Anschließenden erfolgt eine manuellen Kuratierung. Die Daten werden von Wiederholungen und unpassenden Inhalten bereinigt und mit weiter semantischer Information angereichert. Letzteres ermöglicht ein späteres Filtern nach:
+Anschließenden erfolgt eine manuellen Kuratierung der aggregierten Grußformeln. Die Daten werden von Wiederholungen und unpassenden Inhalten bereinigt und mit weiterer semantischer Information angereichert. Letzteres ermöglicht ein späteres Filtern nach:
 
 * Formalität: Informell bzw. freundschaftlich oder formal
 * Geschlecht der Korrespondierenden wie es grammatikalisch aus der Quelle hervorgeht: neutral, weiblich oder männlich
 * Sprache: bisher sieben verschiedene, darunter Deutsch, Englisch, Italienisch und Latein
 
-Jede Grußformel erhält ein @xml:lang mit der entsprechenden Sprache und ein @ana, welches Informationen über Geschlecht und Grad der Formalität enthält. Das folgende Beispiel zeigt, wie das Tagging zur semantischen Anreicherung der Grußformeln umgesetzt wurde:
+Jede Grußformel erhält ein `@xml:lang` mit der entsprechenden Sprache und ein `@ana`, welches Informationen über Geschlecht und Grad der Formalität enthält. Das folgende Beispiel zeigt, wie das Tagging zur semantischen Anreicherung der Grußformeln umgesetzt wurde:
 
     <quote xml:lang="deu" ana="#formal #s-n #r-n">Bis dahin empfiehlt sich Ihrem Wohlwollen hochachtungsvoll</quote>
 
