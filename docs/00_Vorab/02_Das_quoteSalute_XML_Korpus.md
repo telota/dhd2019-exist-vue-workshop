@@ -5,17 +5,18 @@ Als „Indikator für die Beziehungen, die der Briefschreiber zu dem -empfänger
 Für jede Breifedition, die in das Korpus integriert werden soll, wird eine XML-Datei angelegt. Diese besteht aus einem `<teiHeader>` mit den Metadaten (zum Beispiel wo die Daten herstammen) und einem `<body>`, der eine Liste aus `<cit>`-Elementen enthält. Jedes `<cit>` enthält dann die Grußformel, sowie Angaben zum ursprünglichen Brief und zur jeweiligen Edition. Eine Tabellen mit detaillierte Informationen über die Struktur der benötigten TEI-XML-Datei, die für eine Einbindung von Grußformeln in *quoteSalute* erforderlich ist, finden Sie in der Dokumentation auf der [Projektwebseite](https://correspsearch.net/quotesalute//index.xql?id=doc&l=de).
 
 Hier ein Beispiel einer Grußformle im Korpus:
-
-    <cit>
-            <quote xml:lang="deu" ana="#formal #s-m #r-m">Leb wohl.</quote>
-            <bibl>
-                <title type="edition">Briefe und Texte aus dem intellektuellen Berlin um 1800</title>
-                <title type="letter">Brief von Adelbert von Chamisso an Louis de La Foye (ohne Ort, Ende Oktober 1804)</title>
-                <ref
-                    target="http://www.berliner-intellektuelle.eu/manuscript?Brief008ChamissoandeLaFoye.xml"
-                />
-            </bibl>
-        </cit>
+```xml
+<cit>
+    <quote xml:lang="deu" ana="#formal #s-m #r-m">Leb wohl.</quote>
+    <bibl>
+        <title type="edition">Briefe und Texte aus dem intellektuellen Berlin um 1800</title>
+        <title type="letter">Brief von Adelbert von Chamisso an Louis de La Foye (ohne Ort, Ende Oktober 1804)</title>
+        <ref
+            target="http://www.berliner-intellektuelle.eu/manuscript?Brief008ChamissoandeLaFoye.xml"
+        />
+    </bibl>
+</cit>
+```
 
 Anschließenden erfolgt eine manuellen Kuratierung. Die Daten werden von Wiederholungen und unpassenden Inhalten bereinigt und mit weiter semantischer Information angereichert. Letzteres ermöglicht ein späteres Filtern nach:
 
@@ -36,10 +37,8 @@ Das Korpus von *quoteSalute* umfasst derzeit 981 Grußformeln aus 14 verschieden
 Baillot, Anne (Ed.) (o.J.): Briefe und Texte aus dem intellektuellen Berlin um 1800. Berlin: Humboldt-Universität zu Berlin. www.berliner-intellektuelle.eu/  [letzter Zugriff am 04.10.2018]
 
 Ermert, Karl (1979). Briefsorten. Untersuchungen zu Theorie und Empirie der Textklassifikation. Tübingen: Niemeyer.
-Prell, Martin / Schmidt-Funke, Julia (Eds.) (2017): Digitale Edition der Briefe Erdmuthe Benignas von Reuß-Ebersdorf (1670-1732). Jena [Work in Progress]. http://erdmuthe.thulb.uni-jena.de  [letzter Zugriff am 04.10.2018]
+Prell, Martin / Schmidt-Funke, Julia (Eds.) (2017): Digitale Edition der Briefe Erdmuthe Benignas von Reuß-Ebersdorf (1670-1732). Jena [Work in Progress]. [http://erdmuthe.thulb.uni-jena.de](http://erdmuthe.thulb.uni-jena.de)  [letzter Zugriff am 04.10.2018]
 
-TEI Consortium (2018). <salute>. TEI P5: Guidelines for Electronic Text Encoding and Interchange. [Version 3.4.0 23rd July 2018]. http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-salute.html [letzter Zugriff am 04.10.2018]
+TEI Consortium (2018). <salute>. TEI P5: Guidelines for Electronic Text Encoding and Interchange. [Version 3.4.0 23rd July 2018]. [http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-salute.html](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-salute.html) [letzter Zugriff am 04.10.2018]
 
-Trautmann, Marjam / Schrade, Torsten (Eds.) (2018): DER STURM. Digitale Quellenedition zur Geschichte der internationalen Avantgarde. Mainz: Akademie der Wissenschaften und der Literatur. https://sturm-edition.de/quellen/briefe.html  [letzter Zugriff am 04.10.2018]
-
-
+Trautmann, Marjam / Schrade, Torsten (Eds.) (2018): DER STURM. Digitale Quellenedition zur Geschichte der internationalen Avantgarde. Mainz: Akademie der Wissenschaften und der Literatur. [https://sturm-edition.de/quellen/briefe.html](https://sturm-edition.de/quellen/briefe.html)  [letzter Zugriff am 04.10.2018]
