@@ -8,7 +8,7 @@ Das Generieren der Grußformeln als Webapplikation wurde mit HTML, CSS (Bootstra
 
 ## Links
 
-* Projektwebseite: quoteSalute.net
+* Projektwebseite: http://quoteSalute.net
 * Github: https://github.com/telota/quoteSalute
 * Blogbeitrag zum DARIAH-Award: https://dhd-blog.org/?p=10534
 * Bericht beim SWR 2: https://www.ardmediathek.de/tv/SWR2-Journal-am-Mittag/Die-Website-quoteSalute/SWR2/Audio?bcastId=8757898&documentId=53957190  [letzter Zugriff am 04.10.2018]
