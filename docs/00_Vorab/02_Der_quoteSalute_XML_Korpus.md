@@ -1,4 +1,4 @@
-# Der *quoteSalute* XML Korpus
+# Das *quoteSalute* Korpus
 
 Als „Indikator für die Beziehungen, die der Briefschreiber zu dem -empfänger hat oder zu haben glaubt“ (Ermert 1979: 104) sind und waren Grußformeln wesentliche Elemente der schriftlichen Kommunikation, insbesondere des Briefes. Deshalb bieten die Richtlinien der Text Encoding Initiative (TEI) mit dem Element `<salute>` auch seit langem eine entsprechende Kodierungsmöglichkeit  (TEI-Konsortium 2018). Für *quoteSalute* werden Grußformeln anhand des `<salute>`-Elements aus TEI-XML-kodierten Briefeditionen extrahiert und in die TEI-XML basierte Struktur des *quoteSalute*-Austauschformats konvertiert.
 
