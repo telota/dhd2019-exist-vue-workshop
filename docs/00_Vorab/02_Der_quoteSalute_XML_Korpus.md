@@ -10,7 +10,7 @@ Anschließenden erfolgt eine manuellen Kuratierung. Die Daten werden von Wiederh
 * Geschlecht der Korrespondierenden wie es grammatikalisch aus der Quelle hervorgeht: neutral, weiblich oder männlich
 * Sprache: bisher sieben verschiedene, darunter Deutsch, Englisch, Italienisch und Latein
 
-Das Korpus von *quoteSalute* umfasst derzeit 981 Grußformeln aus 14 verschiedenen Briefeditionen (13 digitale und 1 analoge), unter anderem aus den Editionen “Briefe und Texte aus dem intellektuellen Berlin um 1800” (Balliot o.J.), “Digitale Edition der Briefe Erdmuthe Benignas von Reuß-Ebersdorf (1670-1732)” (Prell/Schmidt-Funke 2017) und “DER STURM. Digitale Quellenedition zur Geschichte der internationalen Avantgarde” (Trautmann / Schrade 2018). Alle Editionen haben ihre Daten unter einer freien Lizenzen zur Verfügung gestellt. (Stand März 2019)
+Das Korpus von *quoteSalute* umfasst derzeit 981 Grußformeln aus 14 verschiedenen Briefeditionen (Stand März 2019), unter anderem aus den Editionen “Briefe und Texte aus dem intellektuellen Berlin um 1800” (Balliot o.J.), “Digitale Edition der Briefe Erdmuthe Benignas von Reuß-Ebersdorf (1670-1732)” (Prell/Schmidt-Funke 2017) und “DER STURM. Digitale Quellenedition zur Geschichte der internationalen Avantgarde” (Trautmann / Schrade 2018). Alle Editionen haben ihre Daten unter einer freien Lizenzen zur Verfügung gestellt. 
 
 ## Literatur
 
