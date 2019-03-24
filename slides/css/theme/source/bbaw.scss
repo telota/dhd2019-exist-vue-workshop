@@ -1,0 +1,170 @@
+/**
+ * BBAW/TELOTA theme for reveal.js.
+ *
+ * CC-BY TELOTA
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// Fonts
+$headingFont: 'News Cycle', Impact, sans-serif;
+
+@font-face {
+  font-family: 'Coranica';
+  src: url('../../fonts/coranica_1145.eot');
+  src: url('../../fonts/coranica_1145.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/coranica_1145.woff2') format('woff2'),
+  url('../../fonts/coranica_1145.woff') format('woff'),
+  url('../../fonts/coranica_1145.ttf') format('truetype'),
+  url('../../fonts/coranica_1145.svg#coranicaregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: #000;
+$headingColor: #000;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #f7f3de;
+$linkColor: #C8132B;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(79, 64, 28, 0.99);
+//$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+
+// Background generator
+@mixin bodyBackground() {
+  @include radial-gradient( rgba(255,255,255,1), rgba(255,255,255,1) );
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ------------
+
+/*
+body:after {
+  content: url(../../img/BBAW_Logo.png);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  transform: scale(.4);
+}
+
+@media (max-width: 560px) {
+  body:after {
+    content: url(../../img/BBAW_Logo.png);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    transform: scale(.15);
+  }
+}
+*/
+
+#logo > img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 20%;
+}
+
+@media (max-width: 560px) {
+  #logo > img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 10%;
+  }
+}
+
+
+.reveal .progress {
+  height: 0.5em;
+}
+
+.reveal .footer {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  font-size: 0.3em;
+}
+
+#cc-logo {
+  height: 2em;
+}
+
+.reveal .flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.reveal .flex-item {
+  flex: 1;
+}
+
+.reveal figure img {
+  max-height: 12em !important;
+}
+
+.reveal figure figcaption {
+  font-size: 0.7em !important;
+}
+
+.reveal .equation {
+  font-size: 0.6em;
+  margin: 1em;
+}
+
+
+/* Presentation specific styles */
+
+.reveal .arab {
+  font-family: "Coranica", sans-serif !important;
+  direction: rtl;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: right;
+  font-variant-ligatures: none;
+  -moz-font-feature-settings: "liga" 0, "clig" 0, "calt" 0;
+  -ms-font-feature-settings: "liga" 0, "clig" 0, "calt" 0;
+  -webkit-font-feature-settings: "liga" 0, "clig" 0, "calt" 0;
+  font-feature-settings: "liga" 0, "clig" 0, "calt" 0;
+  word-spacing: 5px;
+}
+
+.reveal sup {
+  font-size: 0.5em;
+}
+
+@media screen and (min-width: 900px), (min-height: 600px) {
+  .reveal table {
+      font-size: 0.82em !important;
+  }
+}
+
+@media screen and (max-width: 700px), (max-height: 400px) {
+  .reveal table {
+      font-size: 0.66em !important;
+  }
+}
+
+
+
+
+.reveal table .variant-reading {
+  background: $linkColor;
+  color: white;
+  padding: 5px;
+}
+
