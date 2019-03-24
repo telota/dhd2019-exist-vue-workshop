@@ -2,6 +2,8 @@
 
 In diesem Abschnitt wird beschrieben, wie man das Datenmodell in einer VueJS-Instanz verwaltet und im HTML-Code nutzbar macht.
 
+**Zugehörige Beispieldatei**: `03_Data_und_Templates.html`
+
 ## Data
 
 Die Vue-Instanz ähnelt vom Aufbau einem JSON-Objekt. Das `data`-Element verwaltet das interne Datenmodell der Vue-Instanz. Nach dem Key-Value-Prinzip können hier neue Variablen angelegt werden.
@@ -30,7 +32,7 @@ Auf die Variablen kann im Vue-Bereich des HTML-Codes nun zugegriffen werden. Mit
 
 `{{ name }}` wird also automatisch mit `Alexander von Humboldt` ersetzt.
 
-Man kann auch über Listen iterieren. Für jeden Eintrag `item` in der Einkaufliste `shoppingList` erstelle ein Listenelement `<li>` und trage dort den Wert von `item` ein.
+Man kann auch über Listen iterieren. Für jeden Eintrag `item` in der Einkaufliste `shoppingList` erstelle ein Listenelement `<li>` und trage dort den Wert von `item` ein. Die `v-`Direktiven werden wie normale HTML- bzw. XML-Attribute behandelt, d.h. die Werte sind von `" "` umschlossen.
 
 ```html
 <li v-for="item in shoppingList">{{ item }}</li>

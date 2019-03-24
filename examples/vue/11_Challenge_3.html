@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>DHd19: Challenge 1 - Lösung</title>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:20px">Challenge 2: Lösung</header>
+    <div class="container">
+        <div id="root">
+          <label>Namen eingeben:</label><input type="text" v-model="name">
+          <div>Mein Name ist: {{ name }}</div>
+          <div>
+            Meine Einkaufsliste lautet:
+            <!-- TODO - Hier die Anzahl der Listeneinträge anzeigen lassen -->
+            <ul>
+              <li v-for="item in shoppingList">{{ item }}</li>
+              
+            </ul>
+            <button class="btn btn-primary" @click="emptyList">Liste leeren</button>
+            <div>
+                <label>Neuer Wunsch:</label>
+                <input type="text" v-model="newItem">
+                <button class="btn btn-info" @click="addItem" v-bind:disabled="!isValidNewItem">Hinzufügen</button>
+            </div>
+            <!-- TODO - Hier Info anzeigen, wenn die Eingabe nicht gültig ist-->
+          </div>
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script>
+      const vue = new Vue({
+        el: '#root',
+        data: {
+          name: 'Alexander von Humboldt',
+          shoppingList: [
+            'Bananen',
+            'Brot',
+            'Schokolade'
+          ],
+          newItem: '',
+        },
+        methods: {
+          emptyList() {
+            this.shoppingList = [];
+          },
+          addItem() {
+            if (this.newItem.length && !this.shoppingList.includes(this.newItem)) {
+              this.shoppingList.push(this.newItem);
+              this.newItem = '';
+            }
+          }
+        },
+        computed: {
+          isValidNewItem() {
+            if (this.shoppingList.includes(this.newItem) || this.newItem.length === 0) {
+              return false;
+            }
+
+            return true;
+          },
+          // TODO - hier neue Computed Property anlegen
+        }
+      });
+    </script>
+  </body>
+</html>
