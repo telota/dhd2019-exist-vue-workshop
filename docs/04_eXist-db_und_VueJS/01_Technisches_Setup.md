@@ -2,7 +2,9 @@
 
 ## Beispieldateien
 
-Wir haben Code-Skelette zum Nachvollziehen vorbereitet. Laden Sie folgende Datei herunter **DOWNLOAD ME** und entpacken Sie das ZIP-Archiv auf Ihrem Rechner.
+Wir haben Code-Skelette zum Nachvollziehen vorbereitet. Laden Sie folgende Datei herunter und entpacken Sie das ZIP-Archiv auf Ihrem Rechner. Alle Beispiele in diesem Kapitel beziehen sich auf Dateien aus diesem Archiv.
+
+* [quoteSalute-examples.zip](https://telota.github.io/dhd2019-exist-vue-workshop/examples/quoteSalute-examples.zip)
 
 Die Abhängigkeiten aus den Code-Beispielen werden mitgeliefert.
 
