@@ -92,10 +92,10 @@ Das JSON-Ergebnis sieht wie folgt aus:
 
 ```json
 {
-  "quote":"Mit Achtung der Ihrige",
-  "edition":"August Wilhelm Ifflands dramaturgisches und administratives Archiv",
-  "title":"Von Johann Gottfried Schadow. Berlin, 12. März 1805. Dienstag",
-  "url":"http://iffland.bbaw.de/briefe/detail.xql?id=A0000306",
+  "quote":"Mit Verehrung Ihr ergebenster etc.",
+  "edition":"Jean Paul – Sämtliche Briefe digital",
+  "title":"An Friederike Christiane Elisabeth von Ompteda. Bayreuth, 24. Dezember 1819.",
+  "url":"https://jeanpaul-edition.de/brief.html?num=VII_612",
   "language":"deu",
   "licence":null
 }
