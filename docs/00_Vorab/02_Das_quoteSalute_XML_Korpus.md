@@ -6,7 +6,7 @@ Für jede Breifedition, die in das Korpus integriert werden soll, wird eine XML-
 
 Hier ein Beispiel einer Grußformle im Korpus:
 
-    ```<cit>
+    <cit>
             <quote xml:lang="deu" ana="#formal #s-m #r-m">Leb wohl.</quote>
             <bibl>
                 <title type="edition">Briefe und Texte aus dem intellektuellen Berlin um 1800</title>
@@ -15,7 +15,7 @@ Hier ein Beispiel einer Grußformle im Korpus:
                     target="http://www.berliner-intellektuelle.eu/manuscript?Brief008ChamissoandeLaFoye.xml"
                 />
             </bibl>
-        </cit>```
+        </cit>
 
 Anschließenden erfolgt eine manuellen Kuratierung. Die Daten werden von Wiederholungen und unpassenden Inhalten bereinigt und mit weiter semantischer Information angereichert. Letzteres ermöglicht ein späteres Filtern nach:
 
@@ -25,7 +25,7 @@ Anschließenden erfolgt eine manuellen Kuratierung. Die Daten werden von Wiederh
 
 Jede Grußformel erhält ein @xml:lang mit der entsprechenden Sprache und ein @ana, welches Informationen über Geschlecht und Grad der Formalität enthält. Das folgende Beispiel zeigt, wie das Tagging zur semantischen Anreicherung der Grußformeln umgesetzt wurde:
 
-    ```<quote xml:lang="deu" ana="#formal #s-n #r-n">Bis dahin empfiehlt sich Ihrem Wohlwollen hochachtungsvoll</quote>```
+    <quote xml:lang="deu" ana="#formal #s-n #r-n">Bis dahin empfiehlt sich Ihrem Wohlwollen hochachtungsvoll</quote>
 
 Die hier getaggte Grußformel ist in deutscher Sprache, von formellem Charakter und impliziert sowohl für Sender und Empfänger kein erkennbares Geschlecht.
 
