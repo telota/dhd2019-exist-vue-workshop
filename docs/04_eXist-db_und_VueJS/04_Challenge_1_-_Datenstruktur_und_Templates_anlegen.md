@@ -21,7 +21,7 @@ Erstellen Sie das Datenmodell der Vue-Instanz und lassen Sie die Daten im HTML-C
 
 ## Lösungsansätze
 
-* Öffnen Sie die Datei `04_Challenge_1_-_Datenstruktur_und_Templates_anlegen.html` sowohl mit einem Editor und Browser.
+* Öffnen Sie die Datei `04_Challenge_1.html` sowohl mit einem Editor und Browser.
 * Wenn das Ergebnis im Browser wie vor den Änderungen aussieht, scheint Ihre Lösung richtig zu sein.
 * Die zu bearbeitenden Stellen im Code sind mit `// TODO` oder `<!-- TODO -->` markiert.
 * Erstellen Sie für jedes Element in der JSON-Grußformelvorlage eine neue `data`-Variable.
