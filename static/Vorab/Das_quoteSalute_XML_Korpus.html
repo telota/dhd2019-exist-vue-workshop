@@ -72,7 +72,7 @@
     <div class="s-content">
         <ul class="TableOfContents">
 <li>
-<p><a href="#page_Das-quoteSalute-Korpus">Das <em>quoteSalute</em> Korpus</a></p>
+<p><a href="#page_Das-quoteSalute-XML-Korpus">Das <em>quoteSalute</em> XML Korpus</a></p>
 <ul class="TableOfContents">
 <li>
 <p><a href="#page_Literatur">Literatur</a></p>
@@ -80,29 +80,27 @@
 </ul>
 </li>
 </ul>
-<h1 id="page_Das-quoteSalute-Korpus">Das <em>quoteSalute</em> Korpus</h1>
+<h1 id="page_Das-quoteSalute-XML-Korpus">Das <em>quoteSalute</em> XML Korpus</h1>
 <p>Als „Indikator für die Beziehungen, die der Briefschreiber zu dem -empfänger hat oder zu haben glaubt“ (Ermert 1979: 104) sind und waren Grußformeln wesentliche Elemente der schriftlichen Kommunikation, insbesondere des Briefes. Deshalb bieten die Richtlinien der Text Encoding Initiative (TEI) mit dem Element <code>&lt;salute&gt;</code> auch seit langem eine entsprechende Kodierungsmöglichkeit  (TEI-Konsortium 2018). Für <em>quoteSalute</em> werden Grußformeln anhand des <code>&lt;salute&gt;</code>-Elements aus TEI-XML-kodierten Briefeditionen extrahiert und in die TEI-XML basierte Struktur des <em>quoteSalute</em>-Austauschformats konvertiert.</p>
 <p>Für jede Breifedition, die in das Korpus integriert werden soll, wird eine XML-Datei angelegt. Diese besteht aus einem <code>&lt;teiHeader&gt;</code> mit den Metadaten (zum Beispiel wo die Daten herstammen) und einem <code>&lt;body&gt;</code>, der eine Liste aus <code>&lt;cit&gt;</code>-Elementen enthält. Jedes <code>&lt;cit&gt;</code> enthält dann die Grußformel, sowie Angaben zum ursprünglichen Brief und zur jeweiligen Edition. Eine Tabellen mit detaillierte Informationen über die Struktur der benötigten TEI-XML-Datei, die für eine Einbindung von Grußformeln in <em>quoteSalute</em> erforderlich ist, finden Sie in der Dokumentation auf der <a href="https://correspsearch.net/quotesalute//index.xql?id=doc&amp;l=de" class="Link--external">Projektwebseite</a>.</p>
-<p>Hier ein Beispiel einer Grußformle im Korpus:</p>
+<p>Hier ein Beispiel einer Grußformel im Korpus:</p>
 <pre><code class="language-xml">&lt;cit&gt;
     &lt;quote xml:lang=&quot;deu&quot; ana=&quot;#formal #s-m #r-m&quot;&gt;Leb wohl.&lt;/quote&gt;
     &lt;bibl&gt;
         &lt;title type=&quot;edition&quot;&gt;Briefe und Texte aus dem intellektuellen Berlin um 1800&lt;/title&gt;
         &lt;title type=&quot;letter&quot;&gt;Brief von Adelbert von Chamisso an Louis de La Foye (ohne Ort, Ende Oktober 1804)&lt;/title&gt;
-        &lt;ref
-            target=&quot;http://www.berliner-intellektuelle.eu/manuscript?Brief008ChamissoandeLaFoye.xml&quot;
-        /&gt;
+        &lt;ref target=&quot;http://www.berliner-intellektuelle.eu/manuscript?Brief008ChamissoandeLaFoye.xml&quot;/&gt;
     &lt;/bibl&gt;
 &lt;/cit&gt;
 </code></pre>
-<p>Anschließenden erfolgt eine manuellen Kuratierung. Die Daten werden von Wiederholungen und unpassenden Inhalten bereinigt und mit weiter semantischer Information angereichert. Letzteres ermöglicht ein späteres Filtern nach:</p>
+<p>Anschließenden erfolgt eine manuellen Kuratierung. Die Daten werden von Wiederholungen und unpassenden Inhalten bereinigt und mit weiterer semantischer Information angereichert. Letzteres ermöglicht ein späteres Filtern nach:</p>
 <ul>
 <li>Formalität: Informell bzw. freundschaftlich oder formal</li>
 <li>Geschlecht der Korrespondierenden wie es grammatikalisch aus der Quelle hervorgeht: neutral, weiblich oder männlich</li>
 <li>Sprache: bisher sieben verschiedene, darunter Deutsch, Englisch, Italienisch und Latein</li>
 </ul>
-<p>Jede Grußformel erhält ein @xml:lang mit der entsprechenden Sprache und ein @ana, welches Informationen über Geschlecht und Grad der Formalität enthält. Das folgende Beispiel zeigt, wie das Tagging zur semantischen Anreicherung der Grußformeln umgesetzt wurde:</p>
-<pre><code>&lt;quote xml:lang=&quot;deu&quot; ana=&quot;#formal #s-n #r-n&quot;&gt;Bis dahin empfiehlt sich Ihrem Wohlwollen hochachtungsvoll&lt;/quote&gt;
+<p>Jede Grußformel erhält ein <code>@xml:lang</code> mit der entsprechenden Sprache und ein <code>@ana</code>, welches Informationen über Geschlecht und Grad der Formalität enthält. Das folgende Beispiel zeigt, wie das Tagging zur semantischen Anreicherung der Grußformeln umgesetzt wurde:</p>
+<pre><code class="language-xml">&lt;quote xml:lang=&quot;deu&quot; ana=&quot;#formal #s-n #r-n&quot;&gt;Bis dahin empfiehlt sich Ihrem Wohlwollen hochachtungsvoll&lt;/quote&gt;
 </code></pre>
 <p>Die hier getaggte Grußformel ist in deutscher Sprache, von formellem Charakter und impliziert sowohl für Sender und Empfänger kein erkennbares Geschlecht.</p>
 <p>Das Korpus von <em>quoteSalute</em> umfasst derzeit 981 Grußformeln aus 14 verschiedenen Briefeditionen (Stand März 2019), unter anderem aus den Editionen “Briefe und Texte aus dem intellektuellen Berlin um 1800” (Balliot o.J.), “Digitale Edition der Briefe Erdmuthe Benignas von Reuß-Ebersdorf (1670-1732)” (Prell/Schmidt-Funke 2017) und “DER STURM. Digitale Quellenedition zur Geschichte der internationalen Avantgarde” (Trautmann / Schrade 2018). Alle Editionen haben ihre Daten unter einer freien Lizenzen zur Verfügung gestellt.</p>

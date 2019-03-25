@@ -16,3 +16,7 @@ Die Funktionalität von VueJS wird durch eine Zusatzbibliothek ab diesem Abschni
 vue-resource erlaubt es uns, asynchrone Anfragen (sog. AJAX-Requests) an einen Server zu senden. Während Sie also bereits mit dem Browser eine Webseite geöffnet haben, werden im Hintergrund zusätzliche Informationen vom selben oder anderen Servern geladen, um die Webseite mit neuen Informationen zu füttern.
 
 Wir benutzen vue-resource um neue Grußformeln von unserem quoteSalute-Back-End zu holen und in unserer VueJS-Instanz nutzbar zu machen.
+
+```js
+
+```
